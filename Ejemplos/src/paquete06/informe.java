@@ -8,7 +8,7 @@ package paquete06;
  *
  * @author UTPL
  */
-public class informe {
+public class Informe {
     public static void imprimir (int a, int b , int c, int d){
         String reporteFinal;
         reporteFinal = String.format("La suma de %d + %d es igual a: %d\n"

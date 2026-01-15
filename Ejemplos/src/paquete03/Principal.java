@@ -8,7 +8,7 @@ package paquete03;
 import paquete04.OperadorUno;
 import paquete04.OperadorDos;
 import paquete05.OperadorTres;
-import paquete06.informe;
+import paquete06.Informe;
 
 // import paquete04.*;
 /**
@@ -23,7 +23,7 @@ public class Principal {
         int suma = OperadorDos.obtenerSuma(valorA, valorB);
         int multiplicacion = OperadorTres.obtenerMultiplicacion(valorA, 
                                                                 valorB);
-        informe.imprimir(valorA,valorB,suma,multiplicacion);
+        Informe.imprimir(valorA,valorB,suma,multiplicacion);
         
     }
 }
