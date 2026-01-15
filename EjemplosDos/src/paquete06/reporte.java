@@ -8,7 +8,7 @@ package paquete06;
  *
  * @author UTPL
  */
-public class reporte {
+public class Reporte {
     public static void imprimir(String nombre, String apellido, String ciudad, 
             String nombreEmpresa, String dirrecionEmpresa, double [] notas, double promedio){
         

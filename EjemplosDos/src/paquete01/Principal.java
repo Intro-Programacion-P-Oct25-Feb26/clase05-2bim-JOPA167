@@ -10,7 +10,7 @@ import paquete02.DatoTrabajo;
 import paquete03.DatosUbicacion;
 import paquete04.DatoAcademico;
 import paquete05.DatoFinal;
-import paquete06.reporte;
+import paquete06.Reporte;
 
 /**
  *
@@ -37,7 +37,7 @@ public class Principal {
         dirrecionEmpresa = DatoTrabajo.obtenerDireccionEmpresa();
                 
         
-        reporte.imprimir(nombre, apellidoRetornado, ciudad, nombreEmpresa, dirrecionEmpresa, misNotas, promedio);
+        Reporte.imprimir(nombre, apellidoRetornado, ciudad, nombreEmpresa, dirrecionEmpresa, misNotas, promedio);
         
     }
 }
