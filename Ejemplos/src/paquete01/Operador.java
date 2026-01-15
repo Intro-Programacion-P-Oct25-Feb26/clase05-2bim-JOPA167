@@ -23,5 +23,10 @@ public class Operador {
     public static int obtenerSuma(int a, int b){
         return a + b;
     }
+    public static void imprimir(int a, int b, int c){
+        String reporteFina ="";
+        reporteFina = String.format("La suma de %d + %d es igual a : %d",a,b,c);
+        System.out.printf("%s\n",reporteFina);
+    }
     
 }
