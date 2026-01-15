@@ -5,12 +5,30 @@
  */
 package paquete02;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
  */
 public class DatoTrabajo {
+
     // método que permita preguntar al usuario el nombre de la empresa
-    
-    // método que permita preguntar al usuario la dirección de la empresa
+    public static String obtenerNombreEmpresa() {
+        Scanner entrada = new Scanner(System.in);
+        String nombreEmpresa;
+        System.out.println("Ingrese el nombre de la Empresa: ");
+        nombreEmpresa = entrada.nextLine();
+        return nombreEmpresa;
+    }
+    public static String obtenerDireccionEmpresa() {
+        Scanner entrada = new Scanner(System.in);
+        String direccionEmpresa;
+        System.out.println("Ingrese el nombre de la Empresa: ");
+        direccionEmpresa = entrada.nextLine();
+        return direccionEmpresa;
+    }
+
+
+// método que permita preguntar al usuario la dirección de la empresa
 }

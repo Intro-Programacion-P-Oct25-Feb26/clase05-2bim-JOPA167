@@ -6,9 +6,11 @@
 package paquete01;
 
 import paquete02.DatoPersonal;
+import paquete02.DatoTrabajo;
 import paquete03.DatosUbicacion;
 import paquete04.DatoAcademico;
 import paquete05.DatoFinal;
+import paquete06.reporte;
 
 /**
  *
@@ -20,6 +22,8 @@ public class Principal {
         String nombre;
         String ciudad;
         String apellidoRetornado;
+        String nombreEmpresa;
+        String dirrecionEmpresa;
         
         double[] misNotas;
         double promedio;
@@ -29,17 +33,21 @@ public class Principal {
         ciudad = DatosUbicacion.obtenerCiudad();
         misNotas = DatoAcademico.obtenerNotas(4);
         promedio = DatoFinal.obtenerPromedio(misNotas);
+        nombreEmpresa = DatoTrabajo.obtenerNombreEmpresa();
+        dirrecionEmpresa = DatoTrabajo.obtenerDireccionEmpresa();
+                
         
+        reporte.imprimir(nombre, apellidoRetornado, ciudad, nombreEmpresa, dirrecionEmpresa, misNotas, promedio);
         
-        System.out.printf("Los datos ingresados son:\n"
-                + "Nombre: %s\n"
-                + "Apellido: %s\n"
-                + "Ciudad: %s\n"
-                + "Promedio: %.2f\n",
-                nombre,
-                apellidoRetornado,
-                ciudad,
-                promedio);
     }
-    
 }
+/* 
+
+El problema debe recibir los datos personales como: Nombre, Apellido, Ciudad, Notas
+cada dato debe ser obtenido en funciones diferentes e invocado en el main, luego
+de haberlos importado.
+Para la obtencion de Notas se debe crear una funcion donde se pregunten las notas
+y se acumulen.
+Con las notas obtenidas se calcula el promedio en una funcion diferente.
+Finalmente con todos los datos se crea un informe.
+*/
